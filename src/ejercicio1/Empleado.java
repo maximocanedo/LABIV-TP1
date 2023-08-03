@@ -1,7 +1,17 @@
 package ejercicio1;
 
 public class Empleado {
-	int id;
-	String nombre;
-	int edad;
+	private int Id;
+	private String Nombre;
+	private int Edad;
+	
+	
+	public Empleado(){
+		 this.Nombre="sin nombre";
+		 this.Edad=99;
+	 }
+	public Empleado(String nombre,int edad){
+		 this.Nombre=nombre;
+		 this.Edad=edad;
+	 }
 }
