@@ -14,4 +14,15 @@ public class Empleado {
 		 this.Nombre=nombre;
 		 this.Edad=edad;
 	 }
+	
+	
+	//Metodo toString()
+	@Override
+	public String toString() {
+		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + Id + "]";
+	}
+	
+	
+	
+	
 }
