@@ -27,6 +27,10 @@ public class Empleado {
 		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + Id + "]";
 	}
 	
+	public static int devuelveProximoID() {
+		return cont +1;
+	}
+	
 	
 	
 	
