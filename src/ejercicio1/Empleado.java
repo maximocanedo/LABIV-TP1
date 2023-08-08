@@ -24,7 +24,7 @@ public class Empleado {
 	//Metodo toString()
 	@Override
 	public String toString() {
-		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + Id + "]";
+		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + Id ;
 	}
 	
 	public static int devuelveProximoID() {
