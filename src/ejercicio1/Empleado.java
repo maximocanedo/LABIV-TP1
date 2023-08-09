@@ -1,6 +1,7 @@
 package ejercicio1;
 
 public class Empleado {
+	
 	private String Nombre;
 	private int Edad;
 	
@@ -19,7 +20,21 @@ public class Empleado {
 		 this.Nombre=nombre;
 		 this.Edad=edad;
 	 }
-	
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public int getEdad() {
+		return Edad;
+	}
+	public void setEdad(int edad) {
+		Edad = edad;
+	}
+	public int getId() {
+		return Id;
+	}
 	
 	//Metodo toString()
 	@Override
@@ -30,8 +45,5 @@ public class Empleado {
 	public static int devuelveProximoID() {
 		return cont +1;
 	}
-	
-	
-	
 	
 }
