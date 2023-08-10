@@ -5,18 +5,18 @@ public class Empleado {
 	private String Nombre;
 	private int Edad;
 	
-	private final int Id;  
+	private final int id;  
 	static int cont=999;  
 	
 	public Empleado(){
 		 cont++;   
-		 this.Id= cont;  
+		 this.id= cont;  
 		 this.Nombre="sin nombre";
 		 this.Edad=99;
 	 }
 	public Empleado(String nombre,int edad){
 		 cont++;  
-		 this.Id= cont;  
+		 this.id= cont;  
 		 this.Nombre=nombre;
 		 this.Edad=edad;
 	 }
@@ -33,13 +33,13 @@ public class Empleado {
 		Edad = edad;
 	}
 	public int getId() {
-		return Id;
+		return id;
 	}
 	
 	//Metodo toString()
 	@Override
 	public String toString() {
-		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + Id ;
+		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + id ;
 	}
 	
 	public static int devuelveProximoID() {
