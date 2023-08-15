@@ -1,36 +1,34 @@
 package ejercicio1;
 
 public class Empleado {
-	
-	private String Nombre;
-	private int Edad;
-	
-	private final int id;  
-	static int cont=999;  
+	private final int id;
+	private String nombre;
+	private int edad;
+	private static int cont=999;  
 	
 	public Empleado(){
 		 cont++;   
 		 this.id= cont;  
-		 this.Nombre="sin nombre";
-		 this.Edad=99;
+		 this.nombre="sin nombre";
+		 this.edad=99;
 	 }
 	public Empleado(String nombre,int edad){
 		 cont++;  
 		 this.id= cont;  
-		 this.Nombre=nombre;
-		 this.Edad=edad;
+		 this.nombre=nombre;
+		 this.edad=edad;
 	 }
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 	public int getEdad() {
-		return Edad;
+		return edad;
 	}
 	public void setEdad(int edad) {
-		Edad = edad;
+		this.edad = edad;
 	}
 	public int getId() {
 		return id;
@@ -39,7 +37,7 @@ public class Empleado {
 	//Metodo toString()
 	@Override
 	public String toString() {
-		return "Empleado=" + Nombre + ", Edad=" + Edad + ", ID=" + id ;
+		return "Empleado: " + nombre + ", Edad: " + edad + ", Legajo: " + id ;
 	}
 	
 	public static int devuelveProximoID() {
